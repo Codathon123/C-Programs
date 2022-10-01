@@ -1509,7 +1509,8 @@ int main(int argc, char **argv) {
     return 0;
 }
 
- ### C program to perform ### C program to perform matrix multiplication using iterative
+ ### C program to perform ### C program to perform m * C Program to Print Diamond Pattern using For Loop
+atrix multiplication using iterative
  matrix multiplication using iterative
 
 #include<stdio.h>    
@@ -1601,4 +1602,37 @@ int main(){
   printf("\nDeterminant of 3X3 matrix: %ld", determinant);
  
    return 0;
+}
+
+### C Program to Print Diamond Pattern using For Loop
+
+#include <stdio.h>
+ 
+int main()
+{
+    int number, i, k, count = 1;
+ 
+    printf("Enter number of rows: \n");
+    scanf("%d", &number);
+    count = number - 1;
+    for (k = 1; k <= number; k++)
+    {
+        for (i = 1; i <= count; i++)
+            printf(" ");
+        count--;
+        for (i = 1; i <= 2 * k - 1; i++)
+            printf("*");
+        printf("\n");
+     }
+     count = 1;
+     for (k = 1; k <= number - 1; k++)
+     {
+         for (i = 1; i <= count; i++)
+             printf(" ");
+         count++;
+         for (i = 1 ; i <= 2 *(number - k)-  1; i++)
+             printf("*");
+         printf("\n");
+      }
+      return 0;
 }

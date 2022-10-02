@@ -2,6 +2,48 @@
 
 ## Any Type of C Programs ##
 
+### C program to Print Sandglass Number Pattern
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k, rows;
+    
+    printf("Enter Sandglass Number Pattern Rows = ");
+    scanf("%d",&rows);
+
+    printf("The Sandglass Number Pattern\n"); 
+
+	for (i = 1 ; i <= rows; i++ ) 
+	{
+		for (j = 1; j < i; j++ ) 	
+		{
+			printf(" ");
+		}
+		for (k = i; k <= rows; k++ ) 	
+		{
+			printf("%d ", k);
+		}
+		printf("\n");
+	}
+    
+    for (i = rows - 1; i >= 1; i-- ) 
+	{
+		for (j = 1; j < i; j++ ) 	
+		{
+			printf(" ");
+		}
+		for (k = i; k <= rows; k++ ) 	
+		{
+			printf("%d ", k);
+		}
+		printf("\n");
+	}
+		
+    return 0;
+}
+
 ### C Program to Print Triangle of Mirrored Numbers Pattern
 
 #include <stdio.h>

@@ -2,6 +2,36 @@
 
 ## Any Type of C Programs ##
 
+### C Program to Print Square of Numbers in Sine Wave Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Square Numbers in Sine Wave Pat Side = ");
+	scanf("%d", &rows);
+
+	printf("The Square of Numbers in Sine Wave Pattern\n");
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < rows; j++)
+		{
+			if (j % 2 == 0)
+			{
+				printf("%d ", (rows * j) + i + 1);
+			}
+			else
+			{
+				printf("%d ", (rows * (j + 1)) - i);
+			}
+		}
+		printf("\n");
+	}
+}
+
 ### C Program to Print Triangle of Mirrored Numbers Pattern
 
 #include <stdio.h>

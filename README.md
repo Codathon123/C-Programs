@@ -2,6 +2,33 @@
 
 ## Any Type of C Programs ##
 
+### C Program to Print Square of Right Decrement Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Square Right Decrement Numbers Rows = ");
+	scanf("%d", &rows);
+
+	printf("The Square of Right Decrement Numbers Pattern\n");
+
+	for (int i = rows; i >= 1; i--)
+	{
+		for (int j = rows; j >= i; j--)
+		{
+			printf("%d ", j);
+		}
+		for (int k = rows - i + 1; k < rows; k++)
+		{
+			printf("%d ", i);
+		}
+		printf("\n");
+	}
+}
+
 ### Full Pyramid of Numbers
 #include <stdio.h>
 int main() {

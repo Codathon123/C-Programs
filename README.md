@@ -2,6 +2,31 @@
 
 ## Any Type of C Programs ##
 
+### C program to Print Number Pattern 3 using For Loop
+
+#include<stdio.h>
+ 
+int main()
+{
+    int i, j, rows, columns;
+     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+    
+    printf(" \nPlease Enter the Number of Columns : ");
+    scanf("%d", &columns);
+     
+    for(i = 1; i <= rows; i++)
+    {
+    	for(j = i; j < i + columns; j++)
+		{
+			printf("%d", j);     	
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
 ### Full Pyramid of Numbers
 #include <stdio.h>
 int main() {

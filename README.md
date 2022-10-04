@@ -25,6 +25,34 @@ int main()
         printf("\n");
     }
     return 0;
+  }
+### C Program to Print Square With Diagonal Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
+		}
+		printf("\n");
+	}
 }
 
 ### Full Pyramid of Numbers

@@ -2,13 +2,18 @@
 
 ## Any Type of C Programs ##
 
+
 ### C Program to Print Triangle of Mirrored Numbers Pattern
+
+### C Program to Print Square With Diagonal Numbers Pattern
+
 
 #include <stdio.h>
 
 int main()
 {
 	int rows;
+
 
 	printf("Enter Traingle Mirrored Numbers Rows = ");
 	scanf("%d", &rows);
@@ -28,10 +33,29 @@ int main()
 		for (int l = i - 1; l >= 1; l--)
 		{
 			printf("%d", l);
+
+	printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
+
 		}
 		printf("\n");
 	}
 }
+
 
 ### C program to Print Box Number Pattern of 1 and 0
 #include<stdio.h>
@@ -75,6 +99,8 @@ int main() {
     printf("Length of the string: %d", i);
     return 0;
 }
+
+
 
 ### Full Pyramid of Numbers
 #include <stdio.h>

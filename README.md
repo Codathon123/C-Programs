@@ -2,7 +2,7 @@
 
 ## Any Type of C Programs ##
 
-### C Program to Left Shift the Square Pattern of Odd Numbers
+### C Program to Left Shift the Square Pattern of Odd Number
 
 #include <stdio.h>
 
@@ -24,6 +24,23 @@ int main()
 		for (int k = 0; k < i - 1; k++)
 		{
 			printf("%d ", k * 2 + 1);
+      
+	printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
 		}
 		printf("\n");
 	}

@@ -2,10 +2,66 @@
 
 ## Any Type of C Programs ##
 
-### C program to Print Sandglass Number Pattern
+### C Program to Print Square of Numbers in Sine Wave Pattern
 
 #include <stdio.h>
 
+int main()
+{
+	int rows;
+
+	printf("Enter Square Numbers in Sine Wave Pat Side = ");
+	scanf("%d", &rows);
+
+	printf("The Square of Numbers in Sine Wave Pattern\n");
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < rows; j++)
+		{
+			if (j % 2 == 0)
+			{
+				printf("%d ", (rows * j) + i + 1);
+			}
+			else
+			{
+				printf("%d ", (rows * (j + 1)) - i);
+			}
+		}
+		printf("\n");
+	}
+}
+
+### C Program to Print Square With Diagonal Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
+		}
+		printf("\n");
+	}
+}
+
+### C Program to Print Triangle of Mirrored Numbers Pattern
 int main()
 {
     int i, j, k, rows;
@@ -87,7 +143,6 @@ int main()
 
 ### C Program to Print Square With Diagonal Numbers Pattern
 
-
 #include <stdio.h>
 
 int main()
@@ -114,7 +169,7 @@ int main()
 		{
 			printf("%d", l);
 
-	printf("Enter Square with Diagonal Numbers Side = ");
+  printf("Enter Square with Diagonal Numbers Side = ");
 	scanf("%d", &rows);
 
 	printf("Square with Numbers in Diaginal and Remaining 0's\n");
@@ -130,7 +185,6 @@ int main()
 		for (int k = i; k < rows; k++)
 		{
 			printf("0 ");
-
 		}
 		printf("\n");
 	}

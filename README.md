@@ -2,15 +2,24 @@
 
 ## Any Type of C Programs ##
 
-### C Program to Print Triangle of Mirrored Numbers Pattern
-
-
 ### C program to Print Number Pattern 3 using For Loop
 
 #include<stdio.h>
  
 int main()
 {
+
+    int i, j, rows;
+	     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+         
+    for(i = rows; i >= 1; i--)
+    {
+    	for(j = rows; j >= i; j--)
+		{
+			printf(" %d", i);     	
+
     int i, j, rows, columns;
      
     printf(" \nPlease Enter the Number of Rows : ");
@@ -28,6 +37,9 @@ int main()
         printf("\n");
     }
     return 0;
+
+}
+
   }
 
 ### C Program to Print Square With Diagonal Numbers Pattern
@@ -79,6 +91,7 @@ int main()
 		printf("\n");
 	}
 }
+
 
 
 ### C program to Print Box Number Pattern of 1 and 0

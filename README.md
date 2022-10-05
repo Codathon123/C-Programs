@@ -2,6 +2,7 @@
 
 ## Any Type of C Programs ##
 
+
 ### C Program to Print Square of Right Decrement Numbers Pattern
 
 #include <stdio.h>
@@ -9,6 +10,7 @@
 int main()
 {
 	int rows;
+
 
 	printf("Enter Square Right Decrement Numbers Rows = ");
 	scanf("%d", &rows);
@@ -24,6 +26,25 @@ int main()
 		for (int k = rows - i + 1; k < rows; k++)
 		{
 			printf("%d ", i);
+
+	printf("Enter Square Numbers in Sine Wave Pat Side = ");
+	scanf("%d", &rows);
+
+	printf("The Square of Numbers in Sine Wave Pattern\n");
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < rows; j++)
+		{
+			if (j % 2 == 0)
+			{
+				printf("%d ", (rows * j) + i + 1);
+			}
+			else
+			{
+				printf("%d ", (rows * (j + 1)) - i);
+			}
+
 		}
 		printf("\n");
 	}
@@ -56,6 +77,179 @@ int main()
 		}
 		printf("\n");
 	}
+}
+
+### C Program to Print Triangle of Mirrored Numbers Pattern
+int main()
+{
+    int i, j, k, rows;
+    
+    printf("Enter Sandglass Number Pattern Rows = ");
+    scanf("%d",&rows);
+
+    printf("The Sandglass Number Pattern\n"); 
+
+	for (i = 1 ; i <= rows; i++ ) 
+	{
+		for (j = 1; j < i; j++ ) 	
+		{
+			printf(" ");
+		}
+		for (k = i; k <= rows; k++ ) 	
+		{
+			printf("%d ", k);
+		}
+		printf("\n");
+	}
+    
+    for (i = rows - 1; i >= 1; i-- ) 
+	{
+		for (j = 1; j < i; j++ ) 	
+		{
+			printf(" ");
+		}
+		for (k = i; k <= rows; k++ ) 	
+		{
+			printf("%d ", k);
+		}
+		printf("\n");
+	}
+		
+    return 0;
+}
+
+
+### C program to Print Number Pattern 3 using For Loop
+
+#include<stdio.h>
+ 
+int main()
+{
+
+    int i, j, rows;
+	     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+         
+    for(i = rows; i >= 1; i--)
+    {
+    	for(j = rows; j >= i; j--)
+		{
+			printf(" %d", i);     	
+
+    int i, j, rows, columns;
+     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+    
+    printf(" \nPlease Enter the Number of Columns : ");
+    scanf("%d", &columns);
+     
+    for(i = 1; i <= rows; i++)
+    {
+    	for(j = i; j < i + columns; j++)
+		{
+			printf("%d", j);     	
+        }
+        printf("\n");
+    }
+    return 0;
+
+}
+
+  }
+
+### C Program to Print Square With Diagonal Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+
+	printf("Enter Traingle Mirrored Numbers Rows = ");
+	scanf("%d", &rows);
+
+	printf("Printing Traingle of Mirrored Numbers Pattern\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = rows; j > i; j--)
+		{
+			printf(" ");
+		}
+		for (int k = 1; k <= i; k++)
+		{
+			printf("%d", k);
+		}
+		for (int l = i - 1; l >= 1; l--)
+		{
+			printf("%d", l);
+
+  printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
+		}
+		printf("\n");
+	}
+}
+
+
+### C program to Print Box Number Pattern of 1 and 0
+#include<stdio.h>
+ 
+int main()
+{
+    int i, j, rows, columns;
+     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+    
+    printf(" \nPlease Enter the Number of Columns : ");
+    scanf("%d", &columns);
+     
+    for(i = 1; i <= rows; i++)
+    {
+    	for(j = 1; j <= columns; j++)
+		{
+			if(i == 1 || i == rows || j == 1 || j == columns)
+			{
+				printf("1");
+			}
+			else
+			{
+				printf("0");
+			}       	
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+### C Program to Find the Length of a String
+#include <stdio.h>
+int main() {
+    char s[] = "Programming is fun";
+    int i;
+
+    for (i = 0; s[i] != '\0'; ++i);
+    
+    printf("Length of the string: %d", i);
+    return 0;
 }
 
 ### Full Pyramid of Numbers

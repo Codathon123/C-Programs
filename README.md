@@ -2,8 +2,7 @@
 
 ## Any Type of C Programs ##
 
-
-### C Program to Print Square of Right Decrement Numbers Pattern
+### C Program to Left Shift the Square Pattern of Odd Number
 
 #include <stdio.h>
 
@@ -58,6 +57,21 @@ int main()
 {
 	int rows;
 
+	printf("Enter Square Left Shift Odd Numbers Rows = ");
+	scanf("%d", &rows);
+
+	printf("Left Shift the Square Pattern of Odd Numbers\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = i - 1; j < rows; j++)
+		{
+			printf("%d ", j * 2 + 1);
+		}
+		for (int k = 0; k < i - 1; k++)
+		{
+			printf("%d ", k * 2 + 1);
+      
 	printf("Enter Square with Diagonal Numbers Side = ");
 	scanf("%d", &rows);
 

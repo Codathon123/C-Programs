@@ -51,6 +51,18 @@ int main()
  
 int main()
 {
+
+    int i, j, rows;
+	     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+         
+    for(i = rows; i >= 1; i--)
+    {
+    	for(j = rows; j >= i; j--)
+		{
+			printf(" %d", i);     	
+
     int i, j, rows, columns;
      
     printf(" \nPlease Enter the Number of Rows : ");
@@ -68,7 +80,11 @@ int main()
         printf("\n");
     }
     return 0;
+
+}
+
   }
+
 ### C Program to Print Square With Diagonal Numbers Pattern
 
 

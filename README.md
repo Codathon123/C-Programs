@@ -2,12 +2,13 @@
 
 ## Any Type of C Programs ##
 
-### C program to Print Number Pattern 7 using For Loop
+### C program to Print Number Pattern 3 using For Loop
 
 #include<stdio.h>
  
 int main()
 {
+
     int i, j, rows;
 	     
     printf(" \nPlease Enter the Number of Rows : ");
@@ -18,11 +19,80 @@ int main()
     	for(j = rows; j >= i; j--)
 		{
 			printf(" %d", i);     	
+
+    int i, j, rows, columns;
+     
+    printf(" \nPlease Enter the Number of Rows : ");
+    scanf("%d", &rows);
+    
+    printf(" \nPlease Enter the Number of Columns : ");
+    scanf("%d", &columns);
+     
+    for(i = 1; i <= rows; i++)
+    {
+    	for(j = i; j < i + columns; j++)
+		{
+			printf("%d", j);     	
         }
         printf("\n");
     }
     return 0;
+
 }
+
+  }
+
+### C Program to Print Square With Diagonal Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+
+	printf("Enter Traingle Mirrored Numbers Rows = ");
+	scanf("%d", &rows);
+
+	printf("Printing Traingle of Mirrored Numbers Pattern\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = rows; j > i; j--)
+		{
+			printf(" ");
+		}
+		for (int k = 1; k <= i; k++)
+		{
+			printf("%d", k);
+		}
+		for (int l = i - 1; l >= 1; l--)
+		{
+			printf("%d", l);
+
+	printf("Enter Square with Diagonal Numbers Side = ");
+	scanf("%d", &rows);
+
+	printf("Square with Numbers in Diaginal and Remaining 0's\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int j = 1; j < i; j++)
+		{
+			printf("0 ");
+		}
+		printf("%d ", i);
+
+		for (int k = i; k < rows; k++)
+		{
+			printf("0 ");
+
+		}
+		printf("\n");
+	}
+}
+
+
 
 ### C program to Print Box Number Pattern of 1 and 0
 #include<stdio.h>
@@ -66,6 +136,8 @@ int main() {
     printf("Length of the string: %d", i);
     return 0;
 }
+
+
 
 ### Full Pyramid of Numbers
 #include <stdio.h>

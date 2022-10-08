@@ -2,6 +2,34 @@
 
 ## Any Type of C Programs ##
 
+###C Program to Print Downward Triangle Mirrored Alphabets Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+	
+	printf("Enter Downward Triangle of Mirrored Alphabets Rows = ");
+	scanf("%d", &rows);
+
+	printf("Printing Downward Triangle of Mirrored Alphabets Pattern\n");
+	int alphabet = 65;
+
+	for (int i = 0; i <= rows - 1; i++)
+	{
+		for (int j = i; j <= rows - 1; j++)
+		{
+			printf("%c ", alphabet + j);
+		}
+		for (int k = rows - 2; k >= i; k--)
+		{
+			printf("%c ", alphabet + k);
+		}
+		printf("\n");
+	}
+}
+
 ###C Program to Print Downward Triangle Alphabets Pattern
 #include <stdio.h>
 

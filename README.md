@@ -2,6 +2,17 @@
 
 ## Any Type of C Programs ##
 
+###Modulus operator
+
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  int y = 2;
+  printf("%d", x % y);
+  return 0;
+}
+
 ### Program to print characters from ‘A’ to ‘Z’ using loop
 
 #include <stdio.h>

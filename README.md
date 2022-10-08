@@ -316,6 +316,14 @@ int main() {
    return 0;
 }
 
+###Assignment operator
+#include <stdio.h>
+
+int main() {
+  int x = 10;
+  printf("%d", x);
+  return 0;
+}
 
 ### Inverted half pyramid of *
 

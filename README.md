@@ -3,6 +3,18 @@
 ## Any Type of C Programs ##
 
 
+###Modulus operator
+
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  int y = 2;
+  printf("%d", x % y);
+  return 0;
+}
+
+
 ### Addition operator
 #include <stdio.h>
 
@@ -11,6 +23,7 @@ int main() {
   printf("%d", myNum);
   return 0;
 } 
+
 
 ### Program to print characters from ‘A’ to ‘Z’ using loop
 

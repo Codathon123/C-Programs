@@ -673,6 +673,16 @@ int main() {
     return 0;  
     }   
 
+###Increment operator
+
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  printf("%d", ++x);
+  return 0;
+}
+
 ### C Program to print Number Triangle.
        1
       121

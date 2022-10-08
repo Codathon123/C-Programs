@@ -2,6 +2,18 @@
 
 ## Any Type of C Programs ##
 
+
+###Subtraction operator
+
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  int y = 3;
+  printf("%d", x - y);
+  return 0;
+}
+
 ### Program to print characters from ‘A’ to ‘Z’ using loop
 
 #include <stdio.h>

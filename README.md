@@ -2,6 +2,28 @@
 
 ## Any Type of C Programs ##
 
+###C Program to Print Downward Triangle Alphabets Pattern
+#include <stdio.h>
+
+int main()
+{
+	int rows, alphabet = 65;
+
+	printf("Enter Downward Triangle of Alphabets Rows = ");
+	scanf("%d", &rows);
+
+	printf("Printing Downward Triangle of Alphabets Pattern\n");
+	for (int i = 0; i <= rows - 1; i++)
+	{
+		for (int j = rows - 1; j >= i; j--)
+		{
+			printf("%c ", alphabet + j);
+		}
+		printf("\n");
+	}
+}
+
+
 ##C Program to Print Diamond Alphabets Pattern
 
 #include <stdio.h>

@@ -360,6 +360,16 @@ void start() {
    printf("Hello");    
 }
 
+
+###Decrement operator 
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  printf("%d", --x);
+  return 0;
+}
+
 ### Half Pyramid of Alphabets
 
 #include <stdio.h>

@@ -2119,3 +2119,27 @@ int main()
       }
       return 0;
 }
+
+### C Program to Print Inverted Right Triangle Alphabets Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Inverted Right Triangle of Alphabets Rows = ");
+	scanf("%d", &rows);
+
+	printf("Printing Inverted Right Triangle Alphabets Pattern\n");
+	int alphabet = 65;
+
+	for (int i = rows - 1; i >= 0; i--)
+	{
+		for (int j = 0; j <= i; j++)
+		{
+			printf("%c ", alphabet + j);
+		}
+		printf("\n");
+	}
+}

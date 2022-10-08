@@ -2,6 +2,16 @@
 
 ## Any Type of C Programs ##
 
+
+### Addition operator
+#include <stdio.h>
+
+int main() {
+  int myNum = 100 + 50;
+  printf("%d", myNum);
+  return 0;
+} 
+
 ### Program to print characters from ‘A’ to ‘Z’ using loop
 
 #include <stdio.h>

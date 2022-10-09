@@ -2353,3 +2353,30 @@ int main()
     }
     return 0;
 }
+
+###C Program to Print Right Triangle of Mirrored Numbers Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Right Traingle Mirrored Numbers Rows = ");
+	scanf("%d", &rows);
+
+	printf("Right Traingle of Mirrored Numbers\n");
+	
+	for (int i = 1; i <= rows; i++)			
+	{
+		for (int j = 1; j <= i; j++)		
+		{
+			printf("%d", j);
+		}
+		for (int k = i - 1; k >= 1; k--)	
+		{
+			printf("%d", k);
+		}
+		printf("\n");
+	}
+}

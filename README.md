@@ -2,6 +2,41 @@
 
 ## Any Type of C Programs ##
 
+###C Program to Print Right Triangle of Numbers in Sine Wave Pattern
+
+#include <stdio.h>
+
+int main()
+{
+	int rows;
+
+	printf("Enter Right Traingle of Numbers in Sine Wave Rows = ");
+	scanf("%d", &rows);
+
+	printf("Right Traingle of Numbers in Sine Wave format\n");
+
+	for (int i = 1; i <= rows; i++)
+	{
+		printf("%d ", i);
+		int num = i;
+
+		for (int j = 1; j < i; j++)
+		{
+			if (j % 2 != 0)
+			{
+				printf("%d ", (num + ((2 * (rows - i + 1)) - 1)));
+				num = num + ((2 * (rows - i + 1)) - 1);
+			}
+			else
+			{
+				printf("%d ", (num + 2 * (i - j)));
+				num = num + 2 * (i - j);
+			}
+		}
+		printf("\n");
+	}
+}
+
 ###C Program to Print Right Triangle of Fibonacci Series Numbers Pattern
 
 #include <stdio.h>

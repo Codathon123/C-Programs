@@ -66,7 +66,15 @@ int main()
     return 0;
 }
 
+###if statement 
+#include <stdio.h>
 
+int main() {
+  if (20 > 18) {
+    printf("20 is greater than 18");
+  }  
+  return 0;
+}
 ###C program to Print 1 and 0 in alternative rows
 
 #include<stdio.h>

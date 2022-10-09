@@ -260,6 +260,18 @@ int main() {
   return 0;
 }
 
+
+### Addition Assignment operator
+
+#include <stdio.h>
+
+int main() {
+  int x = 10;
+  x += 5;
+  printf("%d", x);
+  return 0;
+}
+
 ### C Program to Left Shift the Square Pattern of Odd Number
 
 #include <stdio.h>

@@ -2,6 +2,28 @@
 
 ## Any Type of C Programs ##
 
+###C program to Print Square Number Pattern
+
+#include<stdio.h>
+ 
+int main()
+{
+    int i, j, Side;
+     
+    printf("Please Enter Any Side of a Square : ");
+    scanf("%d", &Side);
+     
+    for(i = 0; i < Side; i++)
+    {
+    	for(j = 0; j < Side; j++)
+		{
+           	printf("1");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
 ###C Program to Print Right Triangle of Numbers in Sine Wave Pattern
 
 #include <stdio.h>
